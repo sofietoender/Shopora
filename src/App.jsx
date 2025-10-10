@@ -1,32 +1,31 @@
 import "./index.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-function Home() {
-	return <div className="bg-primary text-accent-50 p-8">Hjem-side ✓</div>;
-}
-
-function About() {
-	return <div className="bg-primary text-accent-50 p-8">Om-side ✓</div>;
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="min-h-screen bg-primary">
-				<nav className="p-4 flex gap-4 bg-gray-800">
-					<Link to="/" className="text-accent-50 underline">
-						Hjem
-					</Link>
-					<Link to="/about" className="text-accent-50 underline">
-						Om
-					</Link>
-				</nav>
-
+			<Header />
+			<main className="min-h-screen bg-background">
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
+					<Route
+						path="/"
+						element={
+							<div className="container mx-auto px-4 py-8">
+								<h1 className="text-3xl font-bold text-text-primary">Homepage</h1>
+							</div>
+						}
+					/>
+					<Route
+						path="/contact"
+						element={
+							<div className="container mx-auto px-4 py-8">
+								<h1 className="text-3xl font-bold text-text-primary">Contact Page</h1>
+							</div>
+						}
+					/>
 				</Routes>
-			</div>
+			</main>
 		</BrowserRouter>
 	);
 }
