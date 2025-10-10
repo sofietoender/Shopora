@@ -1,11 +1,7 @@
-import "./App.css";
+import "./index.css";
 
 function App() {
-	return (
-		<div className="flex items-center justify-center h-screen bg-gray-100">
-			<h1 className="text-4xl font-bold text-red-600 underline">Hello Tailwind 🚀</h1>
-		</div>
-	);
+	return <div className="bg-primary text-accent-50">Hello World</div>;
 }
 
 export default App;
