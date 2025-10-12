@@ -39,4 +39,4 @@ npm run dev
 
 ## Deployment
 
-Live site: [shopora-noroff.netlify.app](shopora-noroff.netlify.app)
+Live site: [https://shopora-noroff.netlify.app](https://shopora-noroff.netlify.app)
