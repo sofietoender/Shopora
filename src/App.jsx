@@ -1,27 +1,21 @@
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
+import CartPage from "./pages/CartPage";
+import CheckoutSuccessPage from "./pages/CheckoutSuccessPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
 	return (
 		<Routes>
 			<Route path="/" element={<Layout />}>
-				<Route
-					index
-					element={
-						<div className="container mx-auto px-4 py-8">
-							<h1 className="text-3xl font-bold text-text-primary">Homepage</h1>
-						</div>
-					}
-				/>
-				<Route
-					path="contact"
-					element={
-						<div className="container mx-auto px-4 py-8">
-							<h1 className="text-3xl font-bold text-text-primary">Contact Page</h1>
-						</div>
-					}
-				/>
+				<Route index element={<HomePage />} />
+				<Route path="product/:id" element={<ProductPage />} />
+				<Route path="cart" element={<CartPage />} />
+				<Route path="contact" element={<ContactPage />} />
+				<Route path="checkout-success" element={<CheckoutSuccessPage />} />
 			</Route>
 		</Routes>
 	);
