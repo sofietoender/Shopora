@@ -1,5 +1,9 @@
 # Shopora
 
+<p align="center">
+  <img src="./assets/shopora-mock.png" width="900"/>
+</p>
+
 A modern e-commerce store built with React, Vite, and Tailwind CSS.
 
 ---
@@ -12,20 +16,20 @@ The project focuses on building a responsive and user-friendly shopping experien
 
 Key functionality includes:
 
-* Product catalog with search functionality
-* Detailed product page with reviews and discounts
-* Shopping cart with dynamic updates
-* Checkout process
-* Contact form with validation
+- Product catalog with search functionality
+- Detailed product page with reviews and discounts
+- Shopping cart with dynamic updates
+- Checkout process
+- Contact form with validation
 
 ---
 
 ## Built With
 
-* React.js
-* Vite
-* Tailwind CSS
-* React Router
+- React.js
+- Vite
+- Tailwind CSS
+- React Router
 
 ---
 
@@ -65,12 +69,11 @@ The app will start on your local development server.
 
 ---
 
-
 ## Contact
 
 If you'd like to connect:
 
-* GitHub: [https://github.com/sofietoender](https://github.com/sofietoender)
+- GitHub: [https://github.com/sofietoender](https://github.com/sofietoender)
 
 ---
 
